@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rachana Birthday</title>
+    <style>
+        
+        * {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+#main-class
+{
+width: 400px;
+height: 400px;
+margin: 200px auto;
+perspective: 800px;
+
+}
+
+@keyframes glow {
+    0% {
+        border-color: black;
+        box-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black, 0 0 50px black;
+    }
+    50% {
+        border-color: rgba(190, 17, 153, 0.5);
+        box-shadow: 0 0 5px rgba(202, 14, 161, 0.5), 0 0 15px rgba(213, 17, 171, 0.5), 0 0 30px rgba(201, 17, 161, 0.5), 0 0 50px rgba(196, 14, 156, 0.5);
+    }
+    100% {
+        border-color: rgba(230, 193, 7, 0.7);
+        box-shadow: 0 0 5px rgba(202, 170, 9, 0.7), 0 0 15px rgba(224, 187, 4, 0.7), 0 0 30px rgba(225, 189, 9, 0.7), 0 0 50px rgba(240, 201, 3, 0.7);
+    }
+}
+
+#box-class
+{
+width: 400px;
+transform-style: preserve-3d;
+animation: rotate 15s linear infinite;
+background-color:black;
+
+}
+#box-class div {
+position: absolute;
+width: 400px;
+height: 400px;
+opacity: 0.9;
+color: white;
+
+}
+#top {
+
+transform: rotateX(-90deg) translateY(-200px);
+transform-origin: top;
+background: black;
+background-image: url("https://images.unsplash.com/photo-1607977166054-ba266c446ba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color:black;
+border: 5px solid transparent;
+    border-radius: 10px;
+    animation: glow 1.5s infinite;
+}
+#bottom {
+transform: rotateX(90deg) translateY(200px);
+transform-origin: bottom;
+background: #101010;
+background-image: url("https://images.unsplash.com/photo-1607977166054-ba266c446ba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color:black;
+}
+
+#front {
+transform: translateZ (200px);
+background: black;
+background-image: url("C://Users//sujit//Pictures//wall.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color:black;
+animation:none;
+
+}
+#back {
+transform: rotateY(180deg) translateZ(200px);
+background: #101010;
+background-image: url("https://images.unsplash.com/photo-1607977166054-ba266c446ba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border: 5px solid transparent;
+    border-radius: 10px;
+    animation: glow 1.5s infinite;
+}
+#left {
+
+transform: rotateY(-90deg) translateX(-200px);
+transform-origin: left;
+background: black;
+background-image: url("https://images.unsplash.com/photo-1607977166054-ba266c446ba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border: 5px solid transparent;
+    border-radius: 10px;
+    animation: glow 1.5s infinite;
+}
+#right {
+transform: rotateY(90deg) translateX(200px);
+transform-origin: right;
+background: #101010;
+background-image: url("https://images.unsplash.com/photo-1607977166054-ba266c446ba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border: 5px solid transparent;
+    border-radius: 10px;
+    animation: glow 1.5s infinite;
+}
+@keyframes rotate{
+	0%{transform:rotateY(0);}
+	100%{transform:rotateY(360deg);}
+}
+.shadow{
+	width:400px;
+	height:400px;
+	backgroud-color:rgba(0,0,0,0.5);
+	box-shadow:0 0 50px 50px rogba(0,0,0,0.5);
+        -webkit-transform: rotateX(90deg) translateZ(-250px) rotateY(180deg) translateX(0px);
+}
+
+
+      .wrapper{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        height:100vh;
+        width:100%;
+        background:url('https://images.unsplash.com/photo-1607977166054-ba266c446ba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat;
+        background-size:cover;
+        background-position:center;
+        background-color: #66fcf1;
+        
+      }
+      @keyframes animateBg {
+  100% {
+    filter:hue-rotate(360deg);
+
+  }
+}
+    </style>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+    <div id="main-class">
+<div id="box-class">
+<div id="front"></div>
+<div id="back"></div>
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+<div class="shadow"></div>
+</div>
+</div></div>
+  </body>
+</html>
